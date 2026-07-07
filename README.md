@@ -16,13 +16,13 @@ What began as a single round display turned into a full project spanning three d
 
 | Feature | Description |
 |---|---|
-| 🕒 Live clock | Synced automatically over Wi-Fi via NTP — never needs manual setting |
-| 🌦️ Live weather | Temperature, "feels like," humidity, and conditions pulled from OpenWeatherMap |
-| 🔋 Battery powered | Rechargeable Li-ion cell, no cable needed once charged |
-| 🔌 USB rechargeable | Charge through the onboard Micro USB charging module |
-| 🎚️ Physical power switch | Full hardware on/off, no standby drain |
-| ⭕ Round display | 1.28" circular IPS screen for a modern, watch-face aesthetic |
-| 🖨️ Custom enclosure | Designed in Fusion 360 around the real PCB footprint |
+|  Live clock | Synced automatically over Wi-Fi via NTP — never needs manual setting |
+|  Live weather | Temperature, "feels like," humidity, and conditions pulled from OpenWeatherMap |
+|  Battery powered | Rechargeable Li-ion cell, no cable needed once charged |
+|  USB rechargeable | Charge through the onboard Micro USB charging module |
+|  Physical power switch | Full hardware on/off, no standby drain |
+|  Round display | 1.28" circular IPS screen for a modern, watch-face aesthetic |
+|  Custom enclosure | Designed in Fusion 360 around the real PCB footprint |
 
 ---
 
@@ -111,7 +111,7 @@ PivotTime/
 <img width="1282" height="813" alt="image" src="https://github.com/user-attachments/assets/23986d4f-8d48-4ecb-879c-19fa2330c216" />
 
 ### Finished Build
-![Uploading image.png…]()
+<img width="1600" height="795" alt="image" src="https://github.com/user-attachments/assets/e1e719f9-cdb2-4e15-9abf-a7ad8fbfca9f" />
 
 
 ---
@@ -159,4 +159,4 @@ Inspired by the general concept of a small networked desk clock with a weather r
 
 ## Author
 
-[@your-github-handle](https://github.com/your-github-handle)
+https://github.com/neymardashopepaulwalker-blip
