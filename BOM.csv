@@ -1,9 +1,9 @@
 Component,Spec / Notes,Qty,Buy
-Microcontroller,"Wemos D1 Mini (ESP8266)",1x,https://pt.aliexpress.com/item/1005009637687874.html
-Display,"GC9A01, 1.28"" round, SPI, 240x240",1x,https://pt.aliexpress.com/item/1005006111616872.html
+Microcontroller,"Wemos D1 Mini (ESP8266)",1x,https://pt.aliexpress.com/item/1005009637687874
+Display,"GC9A01, 1.28"" round, SPI, 240x240",1x,https://pt.aliexpress.com/item/1005006111616872
 Battery,"Li-ion/LiPo 3.7V, 500-1000mAh, JST-PH 2.0mm connector",1x,https://www.mercadolivre.com.br/bat-37v-1000mah-lp703040-retangular-energy-power/p/MLB2083847514
-Charger + boost module,"TP4056 charger + protection + 5V step-up, Micro USB input",1x,https://pt.aliexpress.com/item/1005007973210640.html
-Power switch,"SPDT slide switch (Wurth 450301014042 or equivalent)",1x,https://pt.aliexpress.com/item/1005007162182882.html
-Battery connector,"JST-PH 2.0mm (if not included with battery)",1x,https://pt.aliexpress.com/item/1005008779637156.html
+Charger + boost module,"TP4056 charger + protection + 5V step-up, Micro USB input",1x,https://pt.aliexpress.com/item/1005007973210640
+Power switch,"SPDT slide switch (Wurth 450301014042 or equivalent)",1x,https://pt.aliexpress.com/item/1005007162182882
+Battery connector,"JST-PH 2.0mm (if not included with battery)",1x,https://pt.aliexpress.com/item/1005008779637156
 Solder place for screws,"Metal kit",—,https://pt.aliexpress.com/item/1005005043279413.html
-Mounting screws,"M3 x length TBD, per enclosure design",2x,https://pt.aliexpress.com/item/1005004157607945.html
+Mounting screws,"M3 x length TBD, per enclosure design",2x,https://pt.aliexpress.com/item/1005004157607945
