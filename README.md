@@ -52,31 +52,6 @@ What began as a single round display turned into a full project spanning three d
 | solder place for screws | metal kit | — | https://pt.aliexpress.com/item/1005005043279413.html?spm=a2g0o.productlist.main.2.3360De5IDe5IY7&algo_pvid=cedd99ba-a683-4aa1-9cd6-507a28e9b398&algo_exp_id=cedd99ba-a683-4aa1-9cd6-507a28e9b398-1&pdp_ext_f=%7B%22order%22%3A%223067%22%2C%22eval%22%3A%221%22%2C%22fromPage%22%3A%22search%22%7D&pdp_npi=6%40dis%21BRL%2135.93%2131.88%21%21%2143.61%2138.70%21%402101eee917833760049791360ea505%2112000031429968391%21sea%21BR%216086636243%21X%211%210%21n_tag%3A-29919%3Bd%3A922f760c%3Bm03_new_user%3A-29895%3BpisId%3A5000000210965663&curPageLogUid=EA3bhRUOybDz&utparam-url=scene%3Asearch%7Cquery_from%3A%7Cx_object_id%3A1005005043279413%7C_p_origin_prod%3A |
 | Mounting screws | M3 × length TBD, per enclosure design | 2x | https://pt.aliexpress.com/item/1005004157607945.html?src=google&traffic_server_nav=true&src=google&albch=shopping&acnt=768-202-3196&isdl=y&slnk=&plac=&mtctp=&albbt=Google_7_shopping&aff_platform=google&aff_short_key=UneMJZVf&gclsrc=aw.ds&albagn=888888&ds_e_adid=&ds_e_matchtype=&ds_e_device=c&ds_e_network=x&ds_e_product_group_id=&ds_e_product_id=pt1005004157607945&ds_e_product_merchant_id=557532880&ds_e_product_country=BR&ds_e_product_language=pt&ds_e_product_channel=online&ds_e_product_store_id=&ds_url_v=2&albcp=21106536414&albag=&isSmbAutoCall=false&needSmbHouyi=false&gad_source=1&gad_campaignid=21106537179&gbraid=0AAAAAC_WlP9dWsCpw3mdLYf0wY9VNNrPC&gclid=CjwKCAjwpK3SBhASEiwAtV1SPCt5M8-RlyOnh4bzRXGwgLoWKu65YmWR1ewvB_Uc_DGucmw57jSwXRoCpwEQAvD_BwE |
 
----
-
-## Wiring
-
-**Power path:** Battery → Charger/boost module → Switch → Wemos D1 Mini → Display
-
-| From | To |
-|---|---|
-| Battery `+` | Charger module `BAT+` |
-| Battery `−` | Charger module `BAT-` |
-| Charger module `Out+` (5V) | Switch, common pin |
-| Switch, normally-open pin | Wemos D1 Mini `5V` |
-| Charger module `Out-` | Wemos D1 Mini `G` (GND) |
-
-| Display (GC9A01) | Wemos D1 Mini |
-|---|---|
-| VCC | 5V |
-| GND | G |
-| RST | D4 |
-| DC | D2 |
-| CS | D8 |
-| SDA (MOSI) | D7 |
-| SCL (SCK) | D5 |
-
----
 
 ## Repository Structure
 
@@ -95,8 +70,8 @@ PivotTime/
 │   └── pivot_time.ino
 └── production/
     ├── gerbers.zip
-    ├── Top.STEP
-    ├── Bottom.STEP
+    ├── Top.stl
+    ├── Bottom.stl
     └── pivot_time.ino
 ```
 
@@ -116,21 +91,6 @@ PivotTime/
 
 ---
 
-## Firmware Setup
-
-1. Install the **ESP8266 board package** in the Arduino IDE (via Boards Manager).
-2. Install the required libraries through the Library Manager:
-   - `Adafruit GFX Library`
-   - `Adafruit GC9A01A`
-   - `NTPClient`
-   - `ArduinoJson` (v6.x)
-3. Open `Firmware/pivot_time.ino` and fill in:
-   - Wi-Fi SSID and password
-   - OpenWeatherMap API key, city, and country code
-4. Select board **"LOLIN(WEMOS) D1 R2 & mini"**, choose the correct COM port, and upload.
-
----
-
 ## What I Learned
 
 - Designing a schematic and routing a two-sided PCB from scratch in KiCad
@@ -141,22 +101,3 @@ PivotTime/
 - Centering and laying out UI content for a **circular** display, where content near the corners gets clipped by the glass
 
 ---
-
-## Roadmap
-
-- [ ] Battery level indicator on-screen
-- [ ] Sleep/wake on motion or button press to save power
-- [ ] Swappable watch-face styles
-- [ ] 3D-printable enclosure files published as STL
-
----
-
-## Acknowledgments
-
-Inspired by the general concept of a small networked desk clock with a weather readout, adapted into a fully custom round-display build with original PCB, enclosure, and firmware.
-
----
-
-## Author
-
-https://github.com/neymardashopepaulwalker-blip
